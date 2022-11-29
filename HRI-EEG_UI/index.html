@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAI Lab Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--<link href="../static/css/bs.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">-->
+    <script src="../static/js/base.js" defer></script>
+</head>
+<body>
+    
+    <!--Nav Bar--------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-dark py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 text-light" href="#">HAI Lab Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">     
+            <ul class="navbar-nav ms-auto">
+              <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  
+    <!--index page------------------------------------------------------------>
+    <div class="" id="index">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;">實驗說明</h1>
+
+        <!--Sign-->
+        <div class="alert alert-secondary mx-auto text-center" role="alert" style="margin-top: 1%;">
+            <h4 class="alert-heading">歡迎來到HAI Lab Store!</h4>
+            <p>感謝您參與這次實驗。 <br> 在實驗中，我們將會給您xxx元的虛擬預算，讓您在接下來的商店頁面中購物。 <br> 您的任務是要利用我們設置的預算購買下方情境中的目標商品，
+                並跟隨自己的心情，模擬在現實生活中的購物行為，選擇購買或不購買其他商品。 
+            </p>
+            <hr>
+            <p class="mb-0">購物情境：為了達成無紙化學習，您需要購買筆記型電腦以及平板。</p>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-warning fs-5" type="button" id="startBtn">開始購物</button>
+        </div>
+    </div>
+
+    <!--mac--------------------------------------------------------------->
+    <div class="d-none" id="mac">
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+            <div class="col alert alert-secondary text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                <h4 class="alert-heading">預算：NT $50,000</h4>
+            </div>
+            </div>
+        </div>
+      
+      <!--Card Group-->
+      <div class="container-md" style="width: 1000px;">
+        <div class="card-group">
+          <div class="card">
+            <img src="https://images.macrumors.com/t/sdQRnnRYGCT4OHdZ6JOv0U_gWT4=/1600x0/article-new/2021/10/macbook-pro-14-16-inch.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title" id="name1">M1 Max 晶片 MacBook Pro 16 吋</h4>
+              <h6>10 核心 CPU <br>32 核心 GPU <br>32GB 統一記憶體 <br>1TB SSD 儲存裝置</h6><hr>
+              <p class="card-text">
+                16 核心神經網路引擎 <br>
+                16 吋 Liquid Retina XDR 顯示器<br>
+                三個 Thunderbolt 4 埠、HDMI 埠、SDXC 卡插槽、MagSafe 3 埠<br>
+                含 Touch ID 的巧控鍵盤<br>
+                力度觸控板<br>
+                140W USB-C 電源轉接器
+            </p>
+              <h4>NT $104,900</h4><br>
+              <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                <button class="btn btn-warning fs-5" type="button" id="macBtn1">購買</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.macrumors.com/t/9Yr8PI1Trgb-XGnDF_Gy47kNtYE=/1600x0/article-new/2022/06/13-inch-macbook-pro-2022-banner.jpeg" class="card-img-top" alt="..." height="316px">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title">M2 晶片 MacBook Pro 13 吋</h4>
+              <h6>8 核心 CPU <br>10 核心 GPU <br>8GB 統一記憶體 <br>512GB SSD 儲存裝置 </h6><hr>
+              <p class="card-text">
+                16 核心神經網路引擎<br>
+                具備原彩顯示的 13 吋 Retina 顯示器<br>
+                兩個 Thunderbolt / USB 4 埠<br>
+                巧控鍵盤<br>
+                觸控列和 Touch ID <br>
+                力度觸控板</p>
+              <h4>NT $45,900</h4><br>
+              <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                <button class="btn btn-warning fs-5" type="button" id="macBtn2">購買</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="text-center mx-auto mt-3 mb-5">
+        <button class="btn btn-secondary fs-5" id="macBtn3" type="button" style="width: 200px;">無需購買</button>
+      </div>
+      
+    </div>
+
+    <!--mac 1--------------------------------------------------------------->
+    <div class="d-none" id="macP1">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享7折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://cs-d.ecimg.tw/items/DYAJHAA900ANBVE/000001_1667288251.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">HyperDrive 8-in-2 USB-C Hub 太空灰</h4>
+                        <p class="card-text">
+                            ● 市售唯一支援Thunderbolt3的Hub <br>
+                            ● Thunderbolt3可與HDMI支援雙螢幕輸出 <br>
+                            ● Thunderbolt3支援5K高解析度投影 <br>
+                            ● 市售最高快速充電100W <br>
+                            ● 支援Micro SD/SD雙卡讀取高速傳輸 <br>
+                            ● 多埠滿載使用 工作效能穩定不當機 <br>
+                            ● 鋁合金外殼可防止WiFi&藍芽訊號干擾 <br>
+                            ● 隨插隨用 不需要下載安裝軟體 <br>
+                            </p>
+                        <h4><s>NT $2,980</s> <span style="color: red;">NT $2,086</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="macP1Btn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://shoplineimg.com/580ec425617069a0c4102800/62d10d285fe49d001b4a905b/800x.jpg?" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">DEZCTOP USB-C 七合一集線器</h4>
+                        <p class="card-text">
+                            ● 輕鬆滿足辦公或日常需求<br>
+                            ● 一到七，多功能擴充<br>
+                            ● 隨插即用<br>
+                            ● 搭配Bifrost電腦桌，打造工作極簡風</p>
+                        <h4>NT $2,990 <h6 style="color: grey;">限量50 剩餘11</h6> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="macP1Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="macP1Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--mac 2--------------------------------------------------------------->
+    <div class="d-none" id="macP2">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享9折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MMMQ3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1645138486301" class="card-img-top" alt="..." height="400px"><hr>
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">巧控滑鼠 - 黑色多點觸控表面</h4>
+                    <p class="card-text">
+                        巧控滑鼠採用無線及可充電式設計，且底部設計再更精進，能順暢地在桌面上滑動。多點觸控表面可讓你使用簡單手勢操作，例如滑動切換網頁和捲動瀏覽文件等。
+                    </p>
+                    <h4><s>NT $2,790</s> <span style="color: red;">NT $2,511</span> </h4><br>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                    <button class="btn btn-warning fs-5" type="button" id="macP2Btn1">購買</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MMMP3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1645136899926" class="card-img-top" alt="..." height="400px"><hr>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">巧控板</h4>
+                        <p class="card-text">
+                            巧控板採用無線技術及充電式設計，並支援完整的「多點觸控」手勢與力度觸控技術。觸控式軌跡板下方的感測器能偵測你點按力度的細微差異，讓你能用指尖操控更多功能，與你的內容產生更緊密的連結。它的無邊框玻璃表面範圍寬廣，讓你在捲動及滑動時，比以往更有效率且更舒適。
+                        </p>
+                        <h4>NT $4,390 <span style="color: grey; font-size: 18px;">限量發售</span> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                        <button class="btn btn-warning fs-5" type="button" id="macP2Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="macP2Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--mac 3--------------------------------------------------------------->
+    <div class="d-none" id="macP3">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://i2.momoshop.com.tw/1659065482/goodsimg/0009/510/377/9510377_R.webp" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">【P.F. CANDLE CO.】手工香氛蠟燭7.2oz</h4>
+                        <p class="card-text">
+                            • 居家裝飾<br>
+                            • 營造氣氛<br>
+                            • 室內芳香
+                        </p>
+                        <h4><s>NT $990</s> <span style="color: red;">NT $499</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="macP3Btn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://i4.momoshop.com.tw/1658859462/goodsimg/0009/635/876/9635876_R.webp" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">【Rofancy 洛帆晞】香氛蠟燭300g-20種香味任選(純手工製作)</h4>
+                        <p class="card-text">
+                            • 低溫蠟燭<br>
+                            • 不刺激，蠟液可當護膚按摩油<br>
+                            • 調香師嚴選香氣
+                        </p>
+                        <h4>NT $711 <h6 style="color: grey;">限量100 剩餘23</h6> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" id="macP3Btn2" type="button" >購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="macP3Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--mac 4--------------------------------------------------------------->
+    <div class="d-none" id="macP4">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享7折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rhinoshield-犀牛盾-magsafe-兼容系列讓磁吸力有感升級-1662625434.jpg?crop=1xw:1xh;center,top&resize=768:*" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">iPhone SolidSuit 防摔背蓋手機殼 (MagSafe)</h4>
+                        <p class="card-text">
+                            RHINOSHIELD 犀牛盾「MagSafe 兼容系列」保護殼經測試擁有原廠2倍以上的超強磁吸力，可搭配犀牛盾固架MAX (MagSafe 兼容)享受穩固的操作體驗。
+                        </p>
+                        <h4><s>NT $1,790</s> <span style="color: red;">NT $1,253</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" id="macP4Btn1" type="button">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628212EA8F9D81652691690.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">iPhone 犀牛盾 SolidSuit 手機殼 故宮 聯名款 / 龍 </h4>
+                        <p class="card-text">
+                            RhinoShield犀牛盾與國立故宮博物院攜手聯名。將豐富館藏歷史文物加入幽默元素，設計出花卉、動物、獨創等三大系列，要讓熱愛歷史的文青們會心一笑。
+                        </p>
+                        <h4>NT $890 <h6 style="color: grey;">限量250 剩餘78</h6> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button"id="macP4Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="macP4Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--ipad--------------------------------------------------------------->
+    <div class="d-none" id="ipad">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-secondary text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">預算：NT $23,000</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://images.macrumors.com/t/lWHjtfAqAr9zBl54HyFEdNdggos=/1600x0/article-new/2022/03/ipad-air-m1-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">iPad Air (第5代)</h4>
+                        <p class="card-text">
+                            10.9 吋Liquid Retina 顯示器1 原彩顯示<br>
+                            M1 晶片 <br>
+                            8 核心 CPU 配備 4 個效能核心與 4 個節能核心 <br>
+                            8 核心 GPU <br>
+                            16 核心神經網路引擎<br>
+                            8GB RAM <br>
+                            64GB 儲存空間<br>
+                            1200 萬像素廣角相機 <br>
+                            Touch ID <br>
+                            可搭配 Apple Pencil (第 2 代) 使用
+                        </p>
+                        <h4>NT $19,900</h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadBtn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.apfellike.com/wp-content/uploads/2021/04/iPad-Pro-mit-M1-2021-Thumb.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">iPad Pro 12.9 吋 (第6代)</h4>
+                        <p class="card-text">
+                            12.9 吋 Liquid Retina XDR 顯示器 <br>
+                            ProMotion 自動適應更新頻率技術與原彩顯示<br>
+                            M2 晶片<br>
+                            8 核心 CPU 配備 4 個效能核心與 4 個節能核心 <br>
+                            10 核心 GPU <br>
+                            16 核心神經網路引擎<br>
+                            8GB RAM <br>      
+                            1200 萬像素廣角與 1000 萬像素超廣角相機<br>
+                            Face ID <br>
+                            可搭配 Apple Pencil (第 2 代) 使用<br>
+                            128 GB 儲存空間
+                        </p>
+                        <h4>NT $37,900</h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadBtn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="ipadBtn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--ipad 1--------------------------------------------------------------->
+    <div class="d-none" id="ipadP1">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享7折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://cs-b.ecimg.tw/items/DYAH62A900ANA9V/i010001_1588825891.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">innowatt 類紙感Paperlike可書寫螢幕保護貼膜 <br>(2 Pack保固版)</h4>
+                        <p class="card-text">
+                            ●2片包裝：全台唯一開箱送保固的類紙感書寫貼膜 <br>
+                            ●日本原料進口，具阻尼係數的仿紙生產技術，繪畫或筆記更行雲流水 <br>
+                            ●厚度0.17mm，不影響清晰度，觸控靈敏不延遲 <br>
+                            ●啞面處理，抗油汙、防指紋且避免眩光產生 <br>
+                            ●硬度3H，軟中帶硬，保護螢幕被筆尖、鑰匙或指甲刮花
+                        </p>
+                        <h4><s>NT $620</s> <span style="color: red;">NT $434</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP1Btn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cs-f.ecimg.tw/items/DYAJHYA900AQ1SM/000001_1611221619.jpg" class="card-img-top" alt="..." height="364.88px">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">【嚴選】iPad 繪圖專用類紙膜保護貼</h4>
+                        <p class="card-text">
+                            ◆ 近似紙張的阻尼感，素描般的繪畫手感 <br>
+                            ◆ 極薄厚度，隱形般貼合 <br>
+                            ◆ 獨特磨砂細紋工藝，抵抗油漬、指紋、手汗 <br>
+                            ◆ 霧面質感，防眩光 
+                        </p>
+                        <h4>NT $690 <h6 style="color: grey;">限量600 剩餘122</h6> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP1Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="ipadP1Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--ipad 2--------------------------------------------------------------->
+    <div class="d-none" id="ipadP2">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享7折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://images.macrumors.com/t/BkSz_056JvYkoKb6_h6QuZJ1UDo=/1600x0/article-new/2022/06/apple-pencil-red.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">Apple Pencil 第 2 代</h4>
+                        <p class="card-text">
+                            無線配對與充電<br>
+                            磁力吸附<br>
+                            點兩下可轉換工具<br>
+                            像素等級的精準度<br>
+                            傾斜度與感壓能力<br>
+                            幾乎難以察覺的延遲感<br>
+                            免額外付費的鐫刻服務
+                        </p>
+                        <h4><s>NT $4,390</s> <span style="color: red;">NT $3,073</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP2Btn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://resource.logitech.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mobility/crayon/crayon-feature1-2-updated.png?v=1" class="card-img-top" alt="..." height="273.66px">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">LOGITECH CRAYON 數位筆</h4>
+                        <p class="card-text">
+                            羅技 Crayon 使用 Apple Pencil 技術，是一款多功能、具有像素級精確度數位筆，適用於所有具備 USB-C 連接埠的 iPad 機型，包括 iPad Pro、iPad Air 和新款 iPad 第 10 代。<br><br>
+                            藉由適用於 iPad，使用 Apple Pencil 技術的羅技 Crayon，進行繪圖、書寫和註記
+                        </p>
+                        <h4>NT $3,990 <span style="color: grey; font-size: 18px;">新品上市 數量有限</span> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP2Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="ipadP2Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--ipad 3--------------------------------------------------------------->
+    <div class="d-none" id="ipadP3">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享7折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://shoplineimg.com/5c357470e84a590001284b1b/6368becad9b309002857cce5/800x.jpg?" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">/novium/ HOVERPEN 2.0 自立筆【星際】- 太陽系第一組傾斜漂浮筆</h4>
+                        <p class="card-text">
+                            一支挑戰地心引力的筆，彷彿無重力般、違反直覺地漂浮旋轉。<br>
+                            多國專利無電漂浮技術，有如桌面上的太空裝置藝術。<br><br>
+                            自立筆〔星際〕底座傾斜更好拿取，我們把這個角度做成了 23.5 度 —— 地球自轉軸傾角，是一組代表地球人的風格筆座組！
+                        </p>
+                        <h4><s>NT $3,250</s> <span style="color: red;">NT $2,275</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP3Btn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://mylamy.com.tw/wp-content/uploads/螢幕擷取畫面-2022-04-07-100414.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">【SAFARI狩獵者系列 320 鋼珠筆 限量 CREAM – 奶油慕斯 (全球台灣獨家／限量草莓奶油版磁扣筆盒)</h4>
+                        <p class="card-text">
+                           • 全球台灣獨家／限量草莓奶油版磁扣筆盒<br>
+                           • LAMY 2022限量商品<br>
+                           • ABS筆身／筆蓋／前端，限量同色迴紋針造型筆夾<br>
+                           • 人體工學前端握把<br>
+                           • 搭配Ｍ63鋼珠筆筆蕊<br>
+                        </p>
+                        <h4>NT $900  <span style="color: grey; font-size: 18px;"> 限量商品售完為止</span> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP3Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="ipadP3Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--ipad 4--------------------------------------------------------------->
+    <div class="d-none" id="ipadP4">
+        <!--Title-->
+        <h1 class="text-center" style="margin-top: 1%;"></h1>
+
+        <!--Sign-->
+        <div class="container text-center">
+            <div class="row mx-auto" style="width: 975px;">
+                <div class="col alert alert-success text-center " role="alert" style="margin-top: 1%; margin-right: 3px; width: 200px;">
+                    <h4 class="alert-heading">加購福利! 購買下方商品享7折優惠！</h4>
+                </div>
+                <div class="col alert alert-warning text-center" role="alert" style="margin-top: 1%; width: 200px;">
+                    <h4 class="alert-heading">限量搶購! 機會有限，要買要快！</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Card Group-->
+        <div class="container-md" style="width:1000px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://i2.momoshop.com.tw/1658857823/goodsimg/0009/602/553/9602553_R.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">木柄陶瓷馬克杯480ml 2入組</h4>
+                        <p class="card-text">
+                            • 送禮自用兩相宜<br>
+                            • 附竹製杯蓋+專用勺子<br>
+                            • 木質舒適手柄
+                        </p>
+                        <h4><s>NT $550</s> <span style="color: red;">NT $385</span> </h4><br>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP4Btn1">購買</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://i3.momoshop.com.tw/1658851274/goodsimg/0009/854/225/9854225_R.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">SNOOPY 史努比 萬用不鏽鋼咖啡杯</h4>
+                        <p class="card-text">
+                            • 咖啡杯/辦公杯/馬克杯<br>
+                            • 大人小孩都合用<br>
+                            • 食品等級奧式304不鏽鋼
+                        </p>
+                        <h4>NT $530 <h6 style="color: grey;">限量150 剩餘42</h6> </h4>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-auto">
+                            <button class="btn btn-warning fs-5" type="button" id="ipadP4Btn2">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" type="button" id="ipadP4Btn3" style="width: 200px;">無需購買</button>
+        </div>
+    </div>
+
+    <!--download test-->
+    <div class="d-none" id="revise">
+        <div class="text-center mx-auto mt-3 mb-5">
+            <button class="btn btn-secondary fs-5" id="downloadBtn" type="button" style="width: 200px;">下載</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
