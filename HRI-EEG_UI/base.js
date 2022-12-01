@@ -67,40 +67,121 @@ function magic(btnID, event, now, next){
   let btn = document.getElementById(btnID);
   if (btn) {
     btn.addEventListener("click", () => {
-       
       if (event == "start"){ // start button
         mark(event);
+        rest();
+        setTimeout(work, 10000);
         move(now, next);
       } 
-      else if (event == "R" || event == "IR"){
+      else if (event == "R"){
         mark(event);
+        rest();
+        setTimeout(work, 10000);
         move(now, next);
+      }
+      else if (event == "IR") {
+        alert("你選擇的商品不符合你的需求喔。再考慮看看吧。");
+        mark(event);
       }
       else { // EDX buttons
 
         if (click == 0){ // first pick
+
           mark(event);
-          click += 1;
-          // call robot here...
-          if (event == "E") {
-            document.getElementById("robot").classList.remove("d-none");
-            responsiveVoice.speak("不考慮一下折扣商品嗎？", "Chinese Female");
-          }
-          else if (event == "D") {
-            document.getElementById("robot").classList.remove("d-none");
-            responsiveVoice.speak("不考慮一下限量商品嗎？機會難得喔", "Chinese Female");
-          }
-          else if (event == "X"){ 
-            document.getElementById("robot").classList.remove("d-none");
-            responsiveVoice.speak("真的不加購商品嗎？", "Chinese Female");
-          }
-          else {
 
-          }
+          if (now == "macP1" || now == "macP4" || now == "ipadP2" || now == "ipadP4"){ // display robot
 
+            click += 1;
+            document.getElementById("robot").classList.remove("d-none");
+
+            switch (now) {
+              case "macP1":
+                switch (event) {
+                  case "E":
+                    document.getElementById("msg1-D").classList.remove("d-none");
+                    responsiveVoice.speak("有超過 85％ 擁有 MacBook 的人都額外購買了左邊正在打折的 eight in two Hub。讓您的裝置原本的兩個 Type C 接孔能夠額外連接 8 個外接裝置。", "Chinese Female");
+                    break;
+                  case "D":
+                    document.getElementById("msg1-E").classList.remove("d-none");
+                    responsiveVoice.speak("有超過 85％ 擁有 MacBook 的人都額外購買了右邊限量版的 nine in one Hub。讓您的裝置只需要一個Type C接孔就能額外連接9個外接裝置。", "Chinese Female");
+                    break;
+                  case "X":
+                    document.getElementById("msg1-D").classList.remove("d-none");
+                    responsiveVoice.speak("有超過 85％ 擁有 MacBook 的人都額外購買了左邊正在打折的 eight in two Hub。讓您的裝置原本的兩個 Type C 接孔能夠額外連接 8 個外接裝置。", "Chinese Female");
+                    break;
+                  default:
+                    break;
+                }
+                break;
+              case "macP4":
+                switch (event) {
+                  case "E":
+                    document.getElementById("msg2-D").classList.remove("d-none");
+                    responsiveVoice.speak("電子支付逐漸變得廣泛，有越來越多人追求更加輕薄的錢包。在這群人中，有超過 7 成的人都選擇了打折中的 Bellroy 的 Slim Sleeve 超薄錢包經典黑款式。還不跟上嗎？", "Chinese Female");
+                    break;
+                  case "D":
+                    document.getElementById("msg2-E").classList.remove("d-none");
+                    responsiveVoice.speak("電子支付逐漸變得廣泛，有越來越多人追求更加輕薄的錢包。在這群人中，有超過 7 成的人都選擇了右邊限量版的 Bellroy 的 Slim Sleeve 超薄錢包 浮雕印花限量款。你值得擁有", "Chinese Female");
+                    break;
+                  case "X":
+                    document.getElementById("msg2-E").classList.remove("d-none");
+                    responsiveVoice.speak("電子支付逐漸變得廣泛，有越來越多人追求更加輕薄的錢包。在這群人中，有超過 7 成的人都選擇了右邊限量版的 Bellroy 的 Slim Sleeve 超薄錢包 浮雕印花限量款。你值得擁有", "Chinese Female");
+                    break;
+                  default:
+                    break;
+                }
+                break;
+              case "ipadP2":
+                switch (event) {
+                  case "E":
+                    document.getElementById("msg3-D").classList.remove("d-none");
+                    responsiveVoice.speak("有超過 95 % 的學生在購買 iPad 的同時，也會購買左方折扣中的 白色 Apple Pencil ，馬上訂購享受無紙化學習的便利吧。", "Chinese Female");
+                    break;
+                  case "D":
+                    document.getElementById("msg3-E").classList.remove("d-none");
+                    responsiveVoice.speak("有超過 95 % 的學生在購買 iPad 的同時，也會購買右方限量版的 稀有黑色 Apple Pencil ，馬上訂購享受無紙化學習的便利吧。", "Chinese Female");
+                    break;
+                  case "X":
+                    document.getElementById("msg3-D").classList.remove("d-none");
+                    responsiveVoice.speak("有超過 95 % 的學生在購買 iPad 的同時，也會購買左方折扣中的 白色 Apple Pencil ，馬上訂購享受無紙化學習的便利吧。", "Chinese Female");
+                    break;
+                  default:
+                    break;
+                }
+                break;
+              case "ipadP4":
+                switch (event) {
+                  case "E":
+                    document.getElementById("msg4-D").classList.remove("d-none");
+                    responsiveVoice.speak("聖誕節快到了，你家還沒有花圈嗎？有 80 % 的消費者都在 IKEA 購買了左邊折價中的 STRALA 人造花環。趕快購買，加入歡慶聖誕的行列吧。", "Chinese Female");
+                    break;
+                  case "D":
+                    document.getElementById("msg4-E").classList.remove("d-none");
+                    responsiveVoice.speak("聖誕節快到了，你家還沒有花圈嗎？有 80 % 的消費者都在 IKEA 購買了右邊的 SMYCKA 人造花環 限量特製松樹款。趕快購買，加入歡慶聖誕的行列吧。", "Chinese Female");
+                    break;
+                  case "X":
+                    document.getElementById("msg4-E").classList.remove("d-none");
+                    responsiveVoice.speak("聖誕節快到了，你家還沒有花圈嗎？有 80 % 的消費者都在 IKEA 購買了右邊的 SMYCKA 人造花環 限量特製松樹款。趕快購買，加入歡慶聖誕的行列吧。", "Chinese Female");
+                    break;
+                  default:
+                    break;
+                }
+                break;
+              default:
+                break;
+            }
+
+          } else {
+            rest();
+            setTimeout(work, 10000);
+            move(now, next);
+            console.log("over");
+          }
         } else { //second pick
           document.getElementById("robot").classList.add("d-none");
           mark(event);
+          rest();
+          setTimeout(work, 10000);
           move(now, next);
           click = 0;
           console.log("over");
@@ -141,3 +222,17 @@ function download(data, filename) {
   }, 0); 
 }
 
+function rest() {
+  $("#black-screen").hide(0);
+}
+
+function work() {
+  $("#black-screen").show(0);
+}
+
+function mask(now, next) {
+  // turn off
+  document.getElementById(now).classList.add("d-none");
+  // turn on
+  document.getElementById(next).classList.remove("d-none");
+}
